@@ -1,0 +1,19 @@
+{
+	"name": "ds_voltgrid_payments",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_voltgrid_api",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/api/db/payments/"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

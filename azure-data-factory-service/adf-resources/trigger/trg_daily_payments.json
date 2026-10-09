@@ -1,0 +1,29 @@
+{
+	"name": "trg_daily_payments",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_voltgrid_payments_to_bronze",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"run_date": "@{formatDateTime(trigger().scheduledTime, 'yyyy-MM-dd')}",
+					"api_username": "voltgrid_demo",
+					"api_password": "EVcharge@AU2025"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-10-09T13:57:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

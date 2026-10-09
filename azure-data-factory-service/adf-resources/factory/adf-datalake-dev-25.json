@@ -1,0 +1,15 @@
+{
+	"name": "adf-datalake-dev-25",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "45efa5ae-71c8-4ad8-b6fb-c67662ba9a67",
+		"tenantId": "9e7bebdc-6fa6-4dd4-98d4-497c6ee43fab"
+	}
+}
